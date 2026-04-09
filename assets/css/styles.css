@@ -1,0 +1,112 @@
+/* styles.css */
+
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 1rem;
+	background-color: black;
+	color: whitesmoke;
+	font-size: 5rem;
+	overflow: hidden; /* scrolling cuts off, no automatic scroll */
+	background-image: url(../img/miles.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+}
+
+.grid-container {
+	/* transform: skew(10deg); */
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 1fr; */ /* spaces out text into 3 columns */
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* repeat columns, auto fit */
+	gap: 2rem; /* gap between words */
+	margin: 10% 4rem 0 4rem;
+}
+
+div {
+	transition-property: transform;
+	transition-duration: 3s;
+}
+
+.last {
+	/* transform: rotate(120deg); */
+	padding-bottom: 2rem;
+	border-bottom: 2px solid rgb(245, 245, 245); 
+	
+}
+
+/*
+.last:hover {
+	animation-name: growAndGlow;
+	animation-duration: 3s;
+}
+*/
+
+.ram:hover {
+	animation-name: roundAbout;
+	animation-duration: 3s;
+}
+
+@keyframes roundAbout {
+	from {
+		color: whitesmoke;
+	}
+
+	to {
+		transform: scale(3);
+		color: indianred;
+	}
+
+}
+
+.kob:hover {
+	animation-name: blue;
+	animation-duration: 3s;
+}
+
+@keyframes blue {
+	from {
+		color: whitesmoke;
+	}
+
+	to {
+		transform: scale(3);
+		color: cornflowerblue;
+	}
+}
+
+.sos:hover {
+	animation-name: spain;
+	animation-duration: 3s;
+}
+
+@keyframes spain {
+	from {
+		color: whitesmoke;
+	}
+
+	to {
+		transform: scale(3);
+		color: gold;
+	}
+}
+.iasw:hover {
+	animation-name: silent;
+	animation-duration: 3s;
+}
+
+@keyframes silent {
+	from {
+		color: whitesmoke;
+	}
+
+	to {
+		transform: scale(3);
+		color: indigo;
+	}
+}
