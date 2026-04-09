@@ -9,6 +9,7 @@ html {
 body {
 	margin: 1rem;
 	background-color: black;
+	font-family: "PT Serif", serif; 
 	color: whitesmoke;
 	font-size: 5rem;
 	overflow: hidden; /* scrolling cuts off, no automatic scroll */
